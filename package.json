@@ -1,7 +1,7 @@
 {
-  "name": "rn-apple-healthkit",
+  "name": "@seanpeplinski/rn-apple-healthkit",
   "version": "0.6.5",
-  "description": "A React Native package for interacting with Apple HealthKit",
+  "description": "This is a fork of: https://github.com/terrillo/rn-apple-healthkit.git that includes support for the AppleExerciseTime field.",
   "main": "index.js",
   "repository": {
     "type": "git",
