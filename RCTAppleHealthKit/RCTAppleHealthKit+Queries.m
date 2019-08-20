@@ -586,11 +586,21 @@
 
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *interval = [[NSDateComponents alloc] init];
-    interval.minute = period;
+
+    if (period == 0) {
+        interval.day = 1;
+    }
+    else {
+        interval.minute = period;
+    }
 
     NSDateComponents *anchorComponents = [calendar components:NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear
                                                      fromDate:startDate];
-    //anchorComponents.hour = 0;
+    
+    if (period == 0) {
+        anchorComponents.hour = 0;
+    }
+
     NSDate *anchorDate = [calendar dateFromComponents:anchorComponents];
     NSPredicate *predicate = nil;
     if (includeManuallyAdded == false) {
