@@ -200,9 +200,19 @@ RCT_EXPORT_METHOD(getHeartRateSamples:(NSDictionary *)input callback:(RCTRespons
     [self vitals_getHeartRateSamples:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(getHeartRateSamplesAvg:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self vitals_getHeartRateSamplesAvg:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getActiveEnergyBurned:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
    [self activity_getActiveEnergyBurned:input callback:callback];
+}
+
+RCT_EXPORT_METHOD(getActiveEnergyBurnedSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+   [self activity_getActiveEnergyBurnedSamples:input callback:callback];
 }
 
 RCT_EXPORT_METHOD(getBasalEnergyBurned:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
@@ -215,6 +225,11 @@ RCT_EXPORT_METHOD(getBodyTemperatureSamples:(NSDictionary *)input callback:(RCTR
     [self vitals_getBodyTemperatureSamples:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(getBodyTemperatureSamplesAvg:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self vitals_getBodyTemperatureSamplesAvg:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getBloodPressureSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self vitals_getBloodPressureSamples:input callback:callback];
@@ -225,9 +240,19 @@ RCT_EXPORT_METHOD(getRespiratoryRateSamples:(NSDictionary *)input callback:(RCTR
     [self vitals_getRespiratoryRateSamples:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(getRespiratoryRateSamplesAvg:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self vitals_getRespiratoryRateSamplesAvg:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getBloodGlucoseSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self results_getBloodGlucoseSamples:input callback:callback];
+}
+
+RCT_EXPORT_METHOD(getBloodGlucoseSamplesAvg:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self results_getBloodGlucoseSamplesAvg:input callback:callback];
 }
 
 RCT_EXPORT_METHOD(getSleepSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
@@ -248,6 +273,11 @@ RCT_EXPORT_METHOD(saveMindfulSession:(NSDictionary *)input callback:(RCTResponse
 RCT_EXPORT_METHOD(getAppleExerciseTime:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self activity_getAppleExerciseTime:input callback:callback];
+}
+
+RCT_EXPORT_METHOD(getAppleExerciseTimeSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self activity_getAppleExerciseTimeSamples:input callback:callback];
 }
 
 - (void)isHealthKitAvailable:(RCTResponseSenderBlock)callback
