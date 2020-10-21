@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "RCTAppleHealthKit"
   s.summary      = "This is a fork of terrillo/rn-apple-healthkit."
-  s.version      = "0.6.7"
+  s.version      = "0.6.9"
   s.homepage     = "https://github.com/terrillo/rn-apple-healthkit"
   s.license      = "MIT"
   s.author       = { "Terrillo Walls" => "terrillo@terrillo.com" }

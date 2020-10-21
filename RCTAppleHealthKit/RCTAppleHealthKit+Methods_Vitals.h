@@ -9,5 +9,8 @@
 - (void)vitals_getBloodPressureSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)vitals_getRespiratoryRateSamples:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 - (void)vitals_getRespiratoryRateSamplesAvg:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
+- (void)vitals_saveBloodPressureSystolic:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
+- (void)vitals_saveBloodPressureDiastolic:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
+- (void)vitals_saveHeartRate:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback;
 
 @end
