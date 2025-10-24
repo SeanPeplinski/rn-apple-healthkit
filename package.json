@@ -1,6 +1,6 @@
 {
   "name": "@seanpeplinski/rn-apple-healthkit",
-  "version": "0.6.9",
+  "version": "0.7.1",
   "description": "This is a fork of: https://github.com/terrillo/rn-apple-healthkit.git that includes support for the AppleExerciseTime field.",
   "main": "index.js",
   "repository": {
